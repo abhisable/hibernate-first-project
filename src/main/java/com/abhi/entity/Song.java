@@ -1,4 +1,4 @@
-package com.abhi.hibernate;
+package com.abhi.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -35,4 +35,10 @@ public class Song {
 	public void setArtist(String artist) {
 		this.artist = artist;
 	}
+	@Override
+	public String toString() {
+		return "Song [id=" + id + ", songName=" + songName + ", artist=" + artist + "]";
+	}
+	
+	
 }
