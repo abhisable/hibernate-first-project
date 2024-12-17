@@ -9,5 +9,7 @@
         <property name="jakarta.persistence.jdbc.url">jdbc:mysql://localhost:3306/hibernate_schema</property>
         <property name="jakarta.persistence.jdbc.user">root</property>
         <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
     </session-factory>
 </hibernate-configuration>

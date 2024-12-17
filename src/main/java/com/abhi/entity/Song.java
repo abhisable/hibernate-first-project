@@ -2,6 +2,8 @@ package com.abhi.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
@@ -9,6 +11,7 @@ public class Song {
 
 	@Id
 	@Column(name="song_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)//identity tells that id generation is being taken care by database vendor in our case mysql
 	int id;
 	
 	@Column(name="song_name")
